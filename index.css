@@ -1,0 +1,161 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+.navbar{
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 10vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    z-index:2 ;
+}
+.aro{
+    position: sticky;
+    top: 500px;
+}
+.coco{
+    background-color: antiquewhite;
+    position: fixed;
+}
+.logo{
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.navlist li{
+    list-style: none;
+    
+}
+.navlist {
+
+ display: flex;
+ gap: 5vw;
+}
+.navlink{
+    text-decoration: none;
+    color: rgb(167, 199, 227);
+    font-weight: 400;
+    
+}
+
+.manu{
+    font-size: 30px;
+    display: none;
+}
+
+
+@media (max-width:780px){
+    .manu{
+        font-size: 30px;
+        display:block;
+    }
+   
+   
+    .navlist{
+        height: 50vh;
+        width: 100%;
+        background-color: rgb(56, 56, 71);
+        position:absolute;
+        top: 50px;
+        left: 0; 
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        flex-direction: column;
+        height: 0px;
+        overflow: hidden; 
+        transition: height 0.5s;
+       }
+       .navbar{
+        background-color: antiquewhite;
+       }
+ 
+}
+.hero{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("./imiges/moun.jpg");
+    background-size: cover;
+    color: antiquewhite;
+   position: absolute;
+   z-index: 1;
+}
+.mybtn P{
+    letter-spacing: 4px;
+    border: 3px solid snow;
+    padding: 5px;
+    display: flex;
+  cursor: pointer;
+  
+}
+.content{
+    width:50%;
+}
+@media(max-width:350px)
+{
+    .content{
+        width:90%;
+    }
+
+    
+}
+.containor{
+   width: 98vw;
+    /* height: 200px; */
+    margin-top: 10px;
+     display: flex; 
+    flex-direction: column;
+    gap: 5px; 
+    background-color: aqua;
+    position: relative;
+    top: 607px;
+}
+
+.box{
+    width: 100%;
+    min-height:100vh;
+    display: flex;
+    justify-content: center;
+    border: 3px solid red;
+}
+.box p{
+    color: chocolate;
+    font-size:25px;
+    font-weight: 500;
+    margin-top: 100px;
+
+
+}
+.footer{
+    width: 100vw;
+    height: 10vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 600px;
+
+}
+.footer p{
+    color: aliceblue;
+
+  
+    
+}
+
+
+
